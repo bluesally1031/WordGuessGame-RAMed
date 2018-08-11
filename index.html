@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--___________________________________________________________________________-->
+
+    <title>Guess Word!</title>
+  </head>
+  <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                    <h1 class="display-4">Welcome to Word Guess!</h1>
+                    <h1 class="display-6">The Rick and Morty Edition</h2>
+                    <hr class="my-4">
+                    <p class="lead">Per usual, someone (probably another Rick) from multiverse has kidnapped your not-really-worth-it grandson, Morty. To free him, Rick, you have to guess the word or phrase below before your number of guesses runs out.</p>
+                </div>    
+            </div>
+        </div>
+        <div class="container">
+            <!-- ROW 1: Press any key-->
+            <div class="row align-items-start">
+                <div class="col">
+                    <p class="lead">Press any key to begin....Seriously, you should rescue him. If you don't, you will never hear the end of it from Beth.</p>
+                </div>
+                <div class="w-100"></div>
+            </div>
+            <!-- ROW 2: Number of Wins and Losses-->
+            <div class="row align-items-start">   
+                <div class="col">
+                    Number of Rescues (wins): <span id="winCounter"></span>
+                </div>
+                <div class="col">
+                    Number of Embarassing Failures (losses): <span id="lossesCounter"></span>
+                </div>
+                <div class="w-100"></div> 
+            </div> 
+            <!-- ROW 3: Guesses remaining -->
+            <div class="row align-items-start">
+                <div class="col-5">
+                    Guesses Remaining (some genius you are...): <span id="guessesRemaining"></span>
+                </div>
+                <div class="w-100"></div>    
+            </div>
+            <!-- ROW 4: Current Word Problem -->
+            <div class="row align-items-start">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h3 class="row-title">Guess this word (or whatever):</h3>
+                    <h2 id="currentWordProblem"> _ _ _ _ _ _ _ _ _ _</h2>
+                </div>
+                <div class="w-100"></div>    
+            </div>
+            <!-- ROW 5: Letters Guessed -->
+            <div class="row align-items-start">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    Letters Guessed (Really? That's the best you got, Sanchez?): <span id="incorrectGuessed"></span>
+                </div>
+                <div class="col-2"></div>
+                <div class="w-100"></div>    
+            </div>
+        </div>
+<!--___________________________________________________________________________-->
+    <!-- Optional JavaScript -->
+        <script src="logic.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
